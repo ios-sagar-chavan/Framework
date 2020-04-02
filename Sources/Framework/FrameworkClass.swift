@@ -22,7 +22,7 @@ open class Validator {
 
 open class APICore {
     public static let `default` = APICore()
-    public var delegate: APIDelegate?
+    public var delegate: APICoreDelegate?
     open func processApiCall( url : String, method: HTTPMethod, parameters: Dictionary<String, Any>)
     {
         Alamofire.request(url, method: method, parameters: parameters).responseData { response in
