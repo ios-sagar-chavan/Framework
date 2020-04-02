@@ -8,7 +8,7 @@
 import Foundation
 import Alamofire
 
-public protocol APIDelegate: AnyObject {
+public protocol APICoreDelegate: AnyObject {
     func didReceiveData(data: Data)
 }
 
@@ -36,5 +36,3 @@ open class APICore {
         }
     }
 }
-
-
